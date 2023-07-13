@@ -1,3 +1,6 @@
 {
-  "item.tutorialmod.gold_dabloon" : "Gold Dabloon"
+  "item.tutorialmod.gold_dabloon" : "Gold Dabloon",
+  "item.tutorialmod.silver_dabloon" : "Silver Dabloon",
+
+  "creativemodetab.currency_tab": "Currency_Tab"
 }

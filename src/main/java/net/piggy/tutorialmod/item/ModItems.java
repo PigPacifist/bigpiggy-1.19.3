@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> GOLD_DABLOON = ITEMS.register("gold_dabloon",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_DABLOON = ITEMS.register("silver_dabloon",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

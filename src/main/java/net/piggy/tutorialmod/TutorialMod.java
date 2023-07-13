@@ -22,6 +22,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.piggy.tutorialmod.item.ModCreativeModeTabs;
 import net.piggy.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -51,6 +52,11 @@ public class TutorialMod {
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GOLD_DABLOON);
+            event.accept(ModItems.SILVER_DABLOON);
+        }
+        if(event.getTab() == ModCreativeModeTabs.CURRENCY_TAB) {
+            event.accept(ModItems.GOLD_DABLOON);
+            event.accept(ModItems.SILVER_DABLOON);
         }
 
     }
